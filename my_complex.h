@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include<math.h>
 struct _complex {
 	double real;
 	double imag;
@@ -18,3 +18,7 @@ Complex complex_conj(Complex c);
 
 double magnitude(Complex c);
 double phase(Complex c);
+
+// adding handling fuctinos
+void function1(Complex (*f1)(Complex, Complex), Complex c1, Complex c2);
+void function2(double (*f2)(Complex), Complex c);
